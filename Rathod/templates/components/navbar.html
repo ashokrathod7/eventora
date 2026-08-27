@@ -1,0 +1,26 @@
+<nav class="glass" id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:40;padding:0 24px;height:70px;display:none;align-items:center;justify-content:space-between">
+<div id="navLogoContainer" onclick="navigate('home')" style="display:flex;align-items:center;gap:8px;cursor:pointer"></div>
+<div id="navLinks" style="display:flex;align-items:center;gap:28px"></div>
+<div style="display:flex;align-items:center;gap:12px;position:relative">
+<div id="colorSwatches"></div>
+<button onclick="toggleTheme()" style="background:none;border:none;color:var(--fg-muted);font-size:18px;cursor:pointer;transition:color .2s" title="Toggle Theme"><i class="fas fa-moon" id="themeIconNav"></i></button>
+<div id="navAuthBtns" style="display:flex;gap:10px">
+<button class="btn-secondary btn-sm" onclick="openModal('loginModal')">Login</button>
+<button class="btn-primary btn-sm" onclick="openModal('registerModal')">Sign Up</button>
+</div>
+<div id="navUserBtns" style="display:none;align-items:center;gap:12px;position:relative">
+<button onclick="toggleUserMenu()" style="background:none;border:none;color:var(--fg);cursor:pointer;display:flex;align-items:center;gap:8px;font-family:'Outfit';font-size:14px;font-weight:500">
+<div id="navAvatar" style="width:34px;height:34px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:var(--accent-text);font-weight:700;font-size:14px;overflow:hidden">U</div>
+<span class="hidden sm-inline" id="navUserName">User</span>
+<i class="fas fa-chevron-down" style="font-size:10px"></i>
+</button>
+<div class="dropdown-menu glass" id="userDropdown">
+<div class="sidebar-link" onclick="navigate('user-dashboard');toggleUserMenu()"><i class="fas fa-th-large"></i> Dashboard</div>
+<div class="sidebar-link" onclick="navigate('user-dashboard');setTimeout(()=&gt;navigateDash('user','user-profile'),100);toggleUserMenu()"><i class="fas fa-user"></i> My Profile</div>
+<div style="height:1px;background:var(--border);margin:4px 0"></div>
+<div class="sidebar-link" onclick="doLogout()" role="button" style="color:var(--danger)" tabindex="0"><i class="fas fa-sign-out-alt"></i> Logout</div>
+</div>
+</div>
+<button id="hamburgerBtn" onclick="openMobileMenu()" style="display:none;background:none;border:none;color:var(--fg);font-size:22px;cursor:pointer"><i class="fas fa-bars"></i></button>
+</div>
+</nav>

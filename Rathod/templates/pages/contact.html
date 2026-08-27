@@ -1,0 +1,35 @@
+<div class="page" id="page-contact" style="padding-top:70px">
+<section style="max-width:1000px;margin:0 auto;padding:20px 24px 80px">
+<div style="text-align:center;margin-bottom:48px">
+<h2 id="cnt_contact_title" style="font-family:'Space Grotesk';font-size:clamp(28px,5vw,44px);font-weight:800;margin-bottom:12px"></h2>
+<p id="cnt_contact_subtext" style="color:var(--fg-muted);max-width:500px;margin:0 auto;font-size:15px"></p>
+</div>
+<div id="contactUserInfo" style="display:none; margin-bottom: 20px; padding: 12px; background: var(--accent-subtle); border: 1px solid var(--accent); border-radius: 12px; font-size: 13px; text-align: center;">
+        You are logged in as <strong id="contactLogName"></strong> (User ID: <span id="contactLogUid" style="word-break: break-all; font-weight:600;"></span>)
+      </div>
+<div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div class="card" style="padding:32px">
+<h3 style="font-weight:700;font-size:20px;margin-bottom:24px">Send a Message</h3>
+<div style="display:flex;flex-direction:column;gap:16px">
+<input class="input-field" id="contactName" placeholder="Your Name"/>
+<input class="input-field" id="contactEmail" placeholder="Your Email" type="email"/>
+<textarea class="input-field" id="contactMsg" placeholder="Your Message / Problem"></textarea>
+<div><label style="font-size:13px;font-weight:600;color:var(--fg-muted);display:block;margin-bottom:6px">Attach Screenshot/Image (Optional)</label><input accept="image/*" class="input-field" id="contactImage" style="padding:10px;" type="file"/></div>
+<button class="btn-primary" onclick="submitContact()" style="width:100%;justify-content:center"><i class="fas fa-paper-plane"></i> Send Message</button>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div class="card" style="padding:24px;display:flex;align-items:center;gap:16px"><div style="width:48px;height:48px;border-radius:14px;background:var(--accent-subtle);display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-envelope" style="color:var(--accent);font-size:18px"></i></div><div><div style="font-size:13px;color:var(--fg-muted)">Email</div><div style="font-weight:600;font-size:15px">rathodashok0103@gmail.com</div></div></div>
+<a class="card" href="https://wa.me/917822963144" style="padding:24px;display:flex;align-items:center;gap:16px;text-decoration:none;color:inherit" target="_blank">
+<div style="width:48px;height:48px;border-radius:14px;background:var(--accent-subtle);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+<i class="fab fa-whatsapp" style="color:var(--accent);font-size:18px"></i>
+</div>
+<div>
+<div style="font-size:13px;color:var(--fg-muted)">WhatsApp Helpline</div>
+<div style="font-weight:600;font-size:15px">+91 78229 63144</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+</div>

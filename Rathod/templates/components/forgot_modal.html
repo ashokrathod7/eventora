@@ -1,0 +1,13 @@
+<div class="modal-overlay" id="forgotModal">
+<div class="modal-box">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px">
+<h3 style="font-family:'Space Grotesk';font-weight:700;font-size:24px">Reset Password</h3>
+<button onclick="closeModal('forgotModal')" style="background:none;border:none;color:var(--fg-muted);font-size:20px;cursor:pointer"><i class="fas fa-xmark"></i></button>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="color:var(--fg-muted);font-size:14px">Enter your email and we'll send you a password reset link.</p>
+<div><label style="font-size:13px;font-weight:600;color:var(--fg-muted);display:block;margin-bottom:6px">Email</label><input class="input-field" id="forgotEmail" placeholder="you@example.com" type="email"/></div>
+<button class="btn-primary" onclick="handleForgot()" style="width:100%;justify-content:center"><i class="fas fa-paper-plane"></i> Send Reset Link</button>
+</div>
+</div>
+</div>

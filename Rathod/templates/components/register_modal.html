@@ -1,0 +1,16 @@
+<div class="modal-overlay" id="registerModal">
+<div class="modal-box">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px">
+<h3 style="font-family:'Space Grotesk';font-weight:700;font-size:24px">Create Account</h3>
+<button onclick="closeModal('registerModal')" style="background:none;border:none;color:var(--fg-muted);font-size:20px;cursor:pointer"><i class="fas fa-xmark"></i></button>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div><label style="font-size:13px;font-weight:600;color:var(--fg-muted);display:block;margin-bottom:6px">Full Name</label><input autocomplete="name" class="input-field" id="regName" maxlength="50" placeholder="John Doe"/></div>
+<div><label style="font-size:13px;font-weight:600;color:var(--fg-muted);display:block;margin-bottom:6px">Email</label><input autocomplete="email" class="input-field" id="regEmail" placeholder="you@example.com" type="email"/></div>
+<div><label style="font-size:13px;font-weight:600;color:var(--fg-muted);display:block;margin-bottom:6px">Phone</label><input autocomplete="tel" class="input-field" id="regPhone" inputmode="numeric" maxlength="14" minlength="10" pattern="(?:\+91[- ]?)?[6-9][0-9]{9}" placeholder="98765 43210" type="tel"/></div>
+<div><label style="font-size:13px;font-weight:600;color:var(--fg-muted);display:block;margin-bottom:6px">Password</label><div style="position:relative"><input autocomplete="new-password" class="input-field" id="regPass" placeholder="Min 8 chars: A-Z, a-z, 0-9, symbol" style="padding-right:46px" type="password"/><button onclick="togglePasswordVisibility('regPass',this)" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--fg-muted);cursor:pointer" type="button"><i class="fas fa-eye"></i></button></div></div><div id="passwordStrengthHint" style="font-size:12px;color:var(--fg-muted);margin-top:-6px;line-height:1.5">Use 8+ characters with uppercase, lowercase, number and special character.</div>
+<button class="btn-primary" onclick="handleRegister()" style="width:100%;justify-content:center"><i class="fas fa-user-plus"></i> Create Account</button>
+<p style="text-align:center;font-size:14px;color:var(--fg-muted)">Already have an account? <span onclick="closeModal('registerModal');openModal('loginModal')" style="color:var(--accent);cursor:pointer;font-weight:600">Login</span></p>
+</div>
+</div>
+</div>
